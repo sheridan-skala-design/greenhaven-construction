@@ -12,9 +12,9 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --forest:    #1B5E3B;
-      --forest-dk: #134A2E;
-      --forest-lt: #2D8C55;
+      --forest:    #5BA829;
+      --forest-dk: #4A8C22;
+      --forest-lt: #7CC740;
       --earth:     #3A3020;
       --warm:      #D4A843;
       --warm-lt:   #E8C46A;
@@ -53,27 +53,13 @@
     .nav-logo {
       display: flex;
       align-items: center;
-      gap: 0.75rem;
       text-decoration: none;
     }
 
-    .nav-logo-icon {
-      width: 36px; height: 36px;
-      background: var(--forest);
-      border-radius: 8px;
-      display: flex; align-items: center; justify-content: center;
+    .nav-logo img {
+      height: 42px;
+      width: auto;
     }
-
-    .nav-logo-icon svg { width: 20px; height: 20px; }
-
-    .nav-logo-text {
-      font-size: 1.15rem;
-      font-weight: 800;
-      color: var(--white);
-      letter-spacing: -0.01em;
-    }
-
-    .nav-logo-text span { color: var(--forest-lt); }
 
     .nav-links {
       display: flex;
@@ -581,15 +567,15 @@
     }
 
     .footer-logo {
-      font-size: 1.2rem;
-      font-weight: 800;
-      color: var(--white);
       display: block;
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.75rem;
       text-decoration: none;
     }
 
-    .footer-logo span { color: var(--forest-lt); }
+    .footer-logo img {
+      height: 38px;
+      width: auto;
+    }
 
     .footer-desc {
       font-size: 0.82rem;
@@ -677,12 +663,7 @@
   <!-- NAV -->
   <nav>
     <a href="#" class="nav-logo">
-      <div class="nav-logo-icon">
-        <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M10 2L3 8V18H8V12H12V18H17V8L10 2Z" fill="white" opacity="0.9"/>
-        </svg>
-      </div>
-      <span class="nav-logo-text"><span>Greenhaven</span> Construction</span>
+      <img src="logo.png" alt="Greenhaven Construction" />
     </a>
     <ul class="nav-links">
       <li><a href="#services">Services</a></li>
@@ -948,7 +929,7 @@
   <!-- FOOTER -->
   <footer>
     <div class="footer-brand">
-      <a href="#" class="footer-logo"><span>Greenhaven</span> Construction</a>
+      <a href="#" class="footer-logo"><img src="logo.png" alt="Greenhaven Construction" /></a>
       <p class="footer-desc">Trusted general contractor in Owatonna, MN. New builds, remodels, additions, roofing, siding & more. Quality craftsmanship, honest pricing, built to last.</p>
       <div class="footer-social">
         <a href="https://www.instagram.com/greenhavenconstruction/" target="_blank" class="fsoc">ig</a>
